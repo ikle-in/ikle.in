@@ -3,14 +3,14 @@
     <v-layout row wrap align-content-start justify-space-between>
       <v-spacer/>
       <v-flex xs12 md6 >
-        <v-card class="content">
+        <v-card class="content titlefont" >
           <h1>Welcome to ikle.in!</h1>
         </v-card>
       </v-flex>
       
       <v-flex xs12 md6 >
-        <v-card class="content">
-          <h1>Interesting Things Going on Here..</h1>
+        <v-card class="content titlefont">
+          <h1>Software development and more..</h1>
         </v-card>
       </v-flex>
 
@@ -28,8 +28,8 @@
       </v-flex>
 
       <v-flex xs12 md3 >
-        <v-card class="content smalltext">
-          <h5>Current Workstation</h5>
+        <v-card class="content smalltext blist">
+          <h5 class="forceCenter">Current Workstation</h5>
           <ul>
             <li>Dual-boot Windows 10 x64 & Elementary OS 5.1 Hera</li>
             <li>AMD Ryzen 3900x 12-core CPU</li>
@@ -38,7 +38,7 @@
             <li>Sabrent Rocket Pcie 4.0 1TB M.2 SSD</li>
             <li>etc..</li>
             <li>Dual MSI 27" 144hz Curved Monitors</li>
-            <li>..and it's STILL cheaper than your Macbook! 😂</li>
+            <li>..still cheaper than a Macbook! 😂</li>
           </ul>
         </v-card>
       </v-flex>
@@ -68,7 +68,8 @@ export default {
   padding-bottom: 1vmax;
   padding-left: 5vw;
   padding-right: 5vw;
-  background-color: lightslategrey !important;
+  /* background-color: #eeeeee !important; */
+  background-color: #4F5D75 !important;
   
 }
 .content {
@@ -76,8 +77,10 @@ export default {
   padding: 5px;
   font-family: Ubuntu;
   text-align: center;
-  color: aqua !important;
-  background-color: black !important;
+  color: rgba(0,0,0, 0.9) !important;
+  /* background-color: rgba(174, 213, 123, 0.8) !important; */
+  background-color: #FCF7F8 !important;
+  box-shadow: 6px 7px #102027 !important;
 }
 .smalltext {
   font-size: 150%;
@@ -88,7 +91,21 @@ export default {
   border-radius: 45% !important;
 }
 .spacr {
-  background-color: lightslategrey !important;
+  background-color: #4F5D75 !important;
   color: black !important;
 }
+.blist {
+  text-align: left !important;
+}
+.forceCenter {
+  text-align: center !important;
+}
+.titlefont {
+  font-family: 'Montserrat Subrayada', sans-serif !important;
+  color: rgba(255,255,255, 1) !important;
+  background-color: 	#7FC6A4 !important;
+  text-shadow: 0px 0px 7px #111111;
+  box-shadow: 8px 9px #102027 !important;
+}
+
 </style>

@@ -1,8 +1,8 @@
 <template>
         <v-footer
-        color="blue-grey darken-4"
+        color="#102027"
         absolute
-        class="font-weight-medium"
+        class="font-weight-medium foot"
         dark
       >
         <v-col
@@ -26,5 +26,7 @@ export default {
 </script>
 
 <style scoped>
-
+.foot {
+  font-family: ubuntu;
+}
 </style>

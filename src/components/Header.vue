@@ -4,7 +4,7 @@
       tile
       class="head"
     >
-      <v-toolbar dense color="blue-grey darken-4" dark>
+      <v-toolbar dense color="#102027" dark>
         <v-app-bar-nav-icon @click.stop="drawer = !drawer" >
         </v-app-bar-nav-icon>
         <v-toolbar-title>ikle.in</v-toolbar-title>
@@ -46,12 +46,12 @@ export default {
 .head {
     width: 100%;
     height: 48px;
+    font-family: ubuntu;
 }
 .menubtn {
   border: 1px solid black; 
   cursor: pointer; /* Pointer/hand icon */
   display: block; /* Make the buttons appear below each other */
   padding: 7px !important;
-  
 }
 </style>
